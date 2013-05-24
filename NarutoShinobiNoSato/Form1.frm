@@ -212,7 +212,7 @@ Begin VB.Form Form1
          BackStyle       =   0  'Transparent
          Caption         =   "Ficha"
          BeginProperty Font 
-            Name            =   "Broadway BT"
+            Name            =   "Arial"
             Size            =   14.25
             Charset         =   0
             Weight          =   700
@@ -231,7 +231,7 @@ Begin VB.Form Form1
          BackStyle       =   0  'Transparent
          Caption         =   "Dificultad:"
          BeginProperty Font 
-            Name            =   "Broadway BT"
+            Name            =   "Arial"
             Size            =   14.25
             Charset         =   0
             Weight          =   700
@@ -260,7 +260,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-'anda
+'modificacion prueba
 
 Private Sub cb_Musica_Click()
     If cb_Musica.Value <> 0 Then

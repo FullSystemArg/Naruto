@@ -1,6 +1,6 @@
 Type=Exe
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
-Reference=*\G{00020813-0000-0000-C000-000000000046}#1.5#0#..\..\..\..\..\..\Program Files (x86)\Microsoft Office\OFFICE11\EXCEL.EXE#Microsoft Excel 11.0 Object Library
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\WINDOWS\system32\STDOLE2.TLB#OLE Automation
+Reference=*\G{00020813-0000-0000-C000-000000000046}#1.5#0#..\..\..\..\..\..\Archivos de programa\Microsoft Office\OFFICE11\EXCEL.EXE#Microsoft Excel 11.0 Object Library
 Object={C1A8AF28-1257-101B-8FB0-0020AF039CA3}#1.1#0; MCI32.OCX
 Form=Form1.frm
 Form=Form2.frm
@@ -39,3 +39,6 @@ Retained=0
 ThreadPerObject=0
 MaxNumberOfThreads=1
 DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
