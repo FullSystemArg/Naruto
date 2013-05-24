@@ -1,0 +1,85 @@
+Attribute VB_Name = "Module2"
+Option Explicit
+
+Public Cara As Integer 'Variable para meter la foto de la cara
+Public ImgCara As Object
+Public Memo As Integer 'Index de memoria
+
+Sub PrimeraCarga(IMG_Mio As Object, lbl_Nombre As Object, lbl_Habilidad As Object, lbl_Chakra As Object, lbl_Inteligencia As Object, lbl_Nivel As Object)
+    Dim i As Integer
+    
+    For i = 1 To (IMG_Mio.Count - 1)
+        Set IMG_Mio(i).Picture = TusNinjas_Foto(i)
+        lbl_Nombre(i).Caption = TusNinjas_Nombre(i)
+        lbl_Habilidad(i).Caption = TusNinjas_HabActual(i)
+        lbl_Chakra(i).Caption = TusNinjas_ChaActual(i)
+        lbl_Inteligencia(i).Caption = TusNinjas_IntActual(i)
+        lbl_Nivel(i).Caption = TusNinjas_Nivel(i)
+    Next i
+End Sub
+    
+Public Sub Cambiar_Ninjas(IMG_Mio As Object, Index As Integer)
+
+    Set Cambio_Foto(Index) = TusNinjas_Foto(Index)
+    Cambio_Nombre(Index) = TusNinjas_Nombre(Index)
+    Cambio_Habilidad(Index) = TusNinjas_Habilidad(Index)
+    Cambio_Chakra(Index) = TusNinjas_Chakra(Index)
+    Cambio_Inteligencia(Index) = TusNinjas_Inteligencia(Index)
+    Cambio_Tipo1(Index) = TusNinjas_Tipo1(Index)
+    Cambio_Tipo2(Index) = TusNinjas_Tipo2(Index)
+    Cambio_Tipo3(Index) = TusNinjas_Tipo3(Index)
+    Cambio_Especial1(Index) = TusNinjas_Especial1(Index)
+    Cambio_Especial2(Index) = TusNinjas_Especial2(Index)
+    Cambio_Especial3(Index) = TusNinjas_Especial3(Index)
+    Cambio_Precio10(Index) = TusNinjas_Precio10(Index)
+    Cambio_Precio20(Index) = TusNinjas_Precio20(Index)
+    Cambio_Precio35(Index) = TusNinjas_Precio35(Index)
+    Cambio_Experiencia(Index) = TusNinjas_Experiencia(Index)
+    Cambio_ExpActual(Index) = TusNinjas_ExpActual(Index)
+    Cambio_HabActual(Index) = TusNinjas_HabActual(Index)
+    Cambio_ChaActual(Index) = TusNinjas_ChaActual(Index)
+    Cambio_IntActual(Index) = TusNinjas_IntActual(Index)
+    Cambio_Nivel(Index) = TusNinjas_Nivel(Index)
+    Set TusNinjas_Foto(Index) = TusNinjas_Foto(Memo)
+    TusNinjas_Nombre(Index) = TusNinjas_Nombre(Memo)
+    TusNinjas_Habilidad(Index) = TusNinjas_Habilidad(Memo)
+    TusNinjas_Chakra(Index) = TusNinjas_Chakra(Memo)
+    TusNinjas_Inteligencia(Index) = TusNinjas_Inteligencia(Memo)
+    TusNinjas_Tipo1(Index) = TusNinjas_Tipo1(Memo)
+    TusNinjas_Tipo2(Index) = TusNinjas_Tipo2(Memo)
+    TusNinjas_Tipo3(Index) = TusNinjas_Tipo3(Memo)
+    TusNinjas_Especial1(Index) = TusNinjas_Especial1(Memo)
+    TusNinjas_Especial2(Index) = TusNinjas_Especial2(Memo)
+    TusNinjas_Especial3(Index) = TusNinjas_Especial3(Memo)
+    TusNinjas_Precio10(Index) = TusNinjas_Precio10(Memo)
+    TusNinjas_Precio20(Index) = TusNinjas_Precio20(Memo)
+    TusNinjas_Precio35(Index) = TusNinjas_Precio35(Memo)
+    TusNinjas_Experiencia(Index) = TusNinjas_Experiencia(Memo)
+    TusNinjas_ExpActual(Index) = TusNinjas_ExpActual(Memo)
+    TusNinjas_HabActual(Index) = TusNinjas_HabActual(Memo)
+    TusNinjas_ChaActual(Index) = TusNinjas_ChaActual(Memo)
+    TusNinjas_IntActual(Index) = TusNinjas_IntActual(Memo)
+    TusNinjas_Nivel(Index) = TusNinjas_Nivel(Memo)
+    Set TusNinjas_Foto(Memo) = Cambio_Foto(Index)
+    TusNinjas_Nombre(Memo) = Cambio_Nombre(Index)
+    TusNinjas_Habilidad(Memo) = Cambio_Habilidad(Index)
+    TusNinjas_Chakra(Memo) = Cambio_Chakra(Index)
+    TusNinjas_Inteligencia(Memo) = Cambio_Inteligencia(Index)
+    TusNinjas_Tipo1(Memo) = Cambio_Tipo1(Index)
+    TusNinjas_Tipo2(Memo) = Cambio_Tipo2(Index)
+    TusNinjas_Tipo3(Memo) = Cambio_Tipo3(Index)
+    TusNinjas_Especial1(Memo) = Cambio_Especial1(Index)
+    TusNinjas_Especial2(Memo) = Cambio_Especial2(Index)
+    TusNinjas_Especial3(Memo) = Cambio_Especial3(Index)
+    TusNinjas_Precio10(Memo) = Cambio_Precio10(Index)
+    TusNinjas_Precio20(Memo) = Cambio_Precio20(Index)
+    TusNinjas_Precio35(Memo) = Cambio_Precio35(Index)
+    TusNinjas_Experiencia(Memo) = Cambio_Experiencia(Index)
+    TusNinjas_ExpActual(Memo) = Cambio_ExpActual(Index)
+    TusNinjas_HabActual(Memo) = Cambio_HabActual(Index)
+    TusNinjas_ChaActual(Memo) = Cambio_ChaActual(Index)
+    TusNinjas_IntActual(Memo) = Cambio_IntActual(Index)
+    TusNinjas_Nivel(Memo) = Cambio_Nivel(Index)
+    
+    
+End Sub
