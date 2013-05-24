@@ -260,6 +260,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+'anda
 
 Private Sub cb_Musica_Click()
     If cb_Musica.Value <> 0 Then
