@@ -7323,6 +7323,10 @@ Private Sub IMG_Mio_MouseUp(Index As Integer, Button As Integer, Shift As Intege
     IMG_Mio(Index).Drag 2
 End Sub
 
+Private Sub Label3_Click()
+
+End Sub
+
 Private Sub lbl_Nivel_Change(Index As Integer)
     If Index = 1 Then Exit Sub
     Select Case Val(lbl_Nivel(Index).Caption)

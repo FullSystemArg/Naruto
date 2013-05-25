@@ -13,6 +13,14 @@ Begin VB.Form Form1
    ScaleHeight     =   10245
    ScaleWidth      =   17955
    StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton Command1 
+      Caption         =   "Cambio"
+      Height          =   495
+      Left            =   14640
+      TabIndex        =   15
+      Top             =   8520
+      Width           =   1815
+   End
    Begin MCI.MMControl MMControl1 
       Height          =   330
       Left            =   840
